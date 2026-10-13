@@ -659,7 +659,7 @@ footer {
 
   .section { padding-block: 130px; }
 
-  .hero h1 { font-size: clamp(5rem, 7vw, 7rem); }
+  .hero h1 { font-size: clamp(5rem, 7vw, 8rem); }
 
   .hero-art { width: 610px; height: 650px; }
 

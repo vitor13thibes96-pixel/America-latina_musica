@@ -656,7 +656,7 @@ footer {
 
   .section { padding-block: 130px; }
 
-  .hero h1 { font-size: clamp(5rem, 7vw, 6rem); }
+  .hero h1 { font-size: clamp(5rem, 7vw, 8rem); }
 
   .hero-art { width: 610px; height: 650px; }
 
@@ -720,6 +720,7 @@ footer {
   width: fit-content;
   transform: rotateZ(270deg) translateY(0.4vw) translateX(-0.3vh);
 }
+
 
 /* AJUSTE RESPONSIVO: evita sobreposição de títulos em telas grandes */
 @media (min-width: 900px) {
