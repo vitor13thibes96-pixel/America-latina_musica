@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exposição da Música Latino-Americana">
+  <title>Exposição da Música — América Latina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-player-estilizado.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="#inicio" aria-label="Exposição da Música">
+      <span>EXPOSIÇÃO</span>
+      <strong>DA MÚSICA</strong>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#paises">Países</a>
+      <a href="#generos">Gêneros</a>
+      <a href="#artistas">Artistas</a>
+    </nav>
+
+    <a class="nav-button" href="#paises">Explorar</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="pattern pattern-top" aria-hidden="true"></div>
+      <div class="pattern pattern-right" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">UMA EXPOSIÇÃO SONORA</p>
+        <h1>Exposição<br>da <span>Música</span></h1>
+        <p class="hero-description">
+          Uma viagem pelos ritmos, artistas e culturas que formam
+          a identidade musical da América Latina.
+        </p>
+
+     
+      </div>
+
+          <div class="hero-art" aria-hidden="true">
+      
+        <img src="img/americalatina.png" alt="Mapa da América Latina" style="width: 100%; height: 100%; object-fit: contain; padding-bottom: 60px;">
+        
+        <p>LATINA<br>AMERICANA</p>
+      </div>
+      <div id="musicPlayer" class="music-player">
+        <div class="music-player-header">
+          <span class="music-player-label">OUÇA A EXPOSIÇÃO</span>
+          <span class="music-player-note">RANDOM</span>
+        </div>
+
+        <div class="music-player-main">
+          <button type="button" class="music-play-button" onclick="playRandomSong()" aria-label="Tocar uma música aleatória">
+            <span class="music-play-icon">▶</span>
+          </button>
+
+          <div class="music-player-info">
+            <span class="music-player-title">Música latino-americana</span>
+            <span id="nowPlaying">Clique para escolher uma faixa</span>
+          </div>
+
+          <div class="music-player-record" aria-hidden="true">
+            <span></span>
+          </div>
+        </div>
+
+        <audio id="audio" controls>
+          <source src="musicas/2.mp3">
+        </audio>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section" id="sobre">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <p>CONHEÇA UM POUCO</p>
+        <h2>Da música<br>latino-americana</h2>
+      </div>
+
+      <div class="intro-grid">
+        <figure class="intro-image">
+          <img src="img/dtmf.jpeg.webp" alt="Paisagem tropical representando a diversidade cultural latino-americana">
+          <figcaption>Entre sons, culturas e territórios.</figcaption>
+        </figure>
+
+        <div class="intro-text">
+          <p>
+            A música latino-americana nasce do encontro entre diferentes
+            povos, histórias e tradições. Seus ritmos atravessam fronteiras
+            e transformam experiências culturais em música.
+          </p>
+          <p>
+            Nesta exposição, você pode conhecer diferentes países,
+            gêneros e artistas que ajudam a construir essa grande paisagem
+            sonora.
+          </p>
+
+          <div class="mini-stats">
+            <div>
+              <strong>20+</strong>
+              <span>países</span>
+            </div>
+            <div>
+              <strong class = "infinito">8</strong>
+              <span>ritmos</span>
+            </div>
+            <div>
+              <strong>01</strong>
+              <span>continente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAÍSES -->
+    <section class="countries section" id="paises">
+      <div class="countries-header">
+        <div>
+          <span class="section-number">02</span>
+          <p class="small-title">AMÉRICA-LATINA</p>
+          <h2>Viaje pelo<br><span>continente</span></h2>
+        </div>
+
+        <div class="vinyl" aria-hidden="true">
+          <div class="vinyl-label"></div>
+        </div>
+      </div>
+
+      <div class="country-grid">
+<a href="Brasil/hub-brasil.html" class="country-card featured"><span>01</span><strong>Brasil</strong><small>MPB · Samba · Bossa Nova</small><b>↗</b></a>
+        
+<a href="Argentina/hub-argentina.html" class="country-card"><span>02</span><strong>Argentina</strong><small>Tango · Rock Nacional</small><b>↗</b></a>
+
+<a href="Bolivia/hub-bolivia.html" class="country-card"><span>03</span><strong>Bolívia</strong><small>Folclore · Música Andina</small><b>↗</b></a>
+
+        <a href="Chile/hub-chile.html" class="country-card"><span>04</span><strong>Chile</strong><small>Folclore · Nueva Canción</small><b>↗</b></a>
+
+        <a href="Colombia/hub-colombia.html" class="country-card"><span>05</span><strong>Colômbia</strong><small>Cumbia · Vallenato</small><b>↗</b></a>
+
+        <a href="Costa rica/hub-costa-rica.html" class="country-card"><span>06</span><strong>Costa Rica</strong><small>Calipso · Música popular</small><b>↗</b></a>
+
+        <a href="Cuba/hub-cuba.html" class="country-card"><span>07</span><strong>Cuba</strong><small>Son · Salsa</small><b>↗</b></a>
+
+        <a href="Equador/hub-equador-ajustado.html" class="country-card"><span>08</span><strong>Equador</strong><small>Pasillo · Música Andina</small><b>↗</b></a>
+
+        <a href="El salvador/hub-el-salvador.html" class="country-card"><span>09</span><strong>El Salvador</strong><small>Folclore · Música popular</small><b>↗</b></a>
+
+        <a href="Guatemala/hub-guatemala.html" class="country-card"><span>10</span><strong>Guatemala</strong><small>Marimba · Música Maia</small><b>↗</b></a>
+
+        <a href="Haiti/hub-haiti.html" class="country-card"><span>11</span><strong>Haiti</strong><small>Kompa · Música haitiana</small><b>↗</b></a>
+
+        <a href="Honduras/hub-honduras.html" class="country-card"><span>12</span><strong>Honduras</strong><small>Punta · Música garífuna</small><b>↗</b></a>
+
+        <a href="Mexico/hub-mexico-ajustado.html" class="country-card"><span>13</span><strong>México</strong><small>Ranchera · Mariachi</small><b>↗</b></a>
+
+        <a href="Nicaragua/hub-nicaragua.html" class="country-card"><span>14</span><strong>Nicarágua</strong><small>Marimba · Folclore</small><b>↗</b></a>
+
+        <a href="Panama/hub-panama.html" class="country-card"><span>15</span><strong>Panamá</strong><small>Salsa · Reggae en Español</small><b>↗</b></a>
+
+        <a href="Paraguai/hub-paraguay.html" class="country-card"><span>16</span><strong>Paraguai</strong><small>Guarania · Polca Paraguaya</small><b>↗</b></a>
+
+        <a href="Peru/hub-peru-ajustado.html" class="country-card"><span>17</span><strong>Peru</strong><small>Andina · Criolla</small><b>↗</b></a>
+
+        <a href="Republica dominicana/hub-republica-dominicana-ajustado.html" class="country-card"><span>18</span><strong>República Dominicana</strong><small>Merengue · Bachata</small><b>↗</b></a>
+
+        <a href="Uruguai/hub-uruguay.html" class="country-card"><span>19</span><strong>Uruguai</strong><small>Candombe · Murga</small><b>↗</b></a>
+
+        <a href="Venezuela/hub-venezuela-ajustado.html" class="country-card"><span>20</span><strong>Venezuela</strong><small>Joropo · Música Llanera</small><b>↗</b></a>
+        
+        <a href="Porto rico/hub-porto-rico-ajustado.html" class="country-card"><span>21</span><strong>Porto Rico</strong><small>Salsa · Bomba</small><b>↗</b></a>
+
+      </div>
+    </section>
+
+    <!-- GÊNEROS -->
+    <section class="genres section" id="generos">
+      <div class="section-heading light">
+        <span class="section-number">03</span>
+        <p>DIFERENTES SONS</p>
+        <h2>Conheça diferentes<br><span>gêneros musicais</span></h2>
+      </div>
+
+      <div class="genre-list">
+        <article class="genre-card">
+          <span class="genre-number">01</span>
+          <h3>Samba</h3>
+          <p>Brasil</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+
+        <article class="genre-card">
+          <span class="genre-number">02</span>
+          <h3>Tango</h3>
+          <p>Argentina · Uruguai</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+
+        <article class="genre-card">
+          <span class="genre-number">03</span>
+          <h3>Cumbia</h3>
+          <p>Colômbia</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+
+        <article class="genre-card">
+          <span class="genre-number">04</span>
+          <h3>Bolero</h3>
+          <p>Cuba · México</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+
+        <article class="genre-card">
+          <span class="genre-number">05</span>
+          <h3>Reggaeton</h3>
+          <p>Caribe · América Latina</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+
+        <article class="genre-card">
+          <span class="genre-number">06</span>
+          <h3>Bossa Nova</h3>
+          <p>Brasil</p>
+          <span class="genre-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta">
+      <div class="pattern pattern-bottom" aria-hidden="true"></div>
+      <p>EXPOSIÇÃO DA MÚSICA</p>
+      <h2>O continente<br>também <span>canta.</span></h2>
+      <a class="primary-button light-button" href="#inicio">
+        Voltar ao início
+        <span>↑</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Exposição da Música · América Latina</p>
+    <p>Por:</p>
+    <p>Arthur, Bernardo correa, Eduardo, Rafael e Vitor</p>
+    <p>Técnico em informática 61 1</p>
+  </footer>
+
+</body>
+<script>
+  // Coloca nesta variavel a quantidade de músicas que tiverem na pasta "musicas"
+  // Também nomeie elas para 1, 2, 3, etc...
+  let numeroDeMúsicas = 7
+  let randomNumber
+  let num
+
+  // Se quiser incluir o nome da música e (preferivelmente) do artista, descomenta a variavel "nomes" e o código comentado
+  // na variavel coloca o nome das músicas e artistas na ordem dos numeros que são seus nomes na pasta (Entre aspas) Exemplo: let nomes = ["musica1 - artista1", "musica2 - artista2"]
+
+  // let nomes = []
+
+  function playRandomSong()
+  {
+    while(true)
+    {
+      num = randomNumber
+      randomNumber = Math.floor(Math.random() * numeroDeMúsicas) + 1
+      if (randomNumber != num)
+      {
+        break
+      } 
+    }
+    document.querySelector("#audio").style.display = "block"
+    sourceSrc = document.querySelector("source").src = `musicas/${randomNumber}.mp3`
+    document.querySelector("#audio").load()
+
+    // document.querySelector("#nowPlaying").innerHTML = `Agora tocando - ${nomes[randomNumber - 1]}`
+    // document.querySelector("#nowPlaying").style.display = "block"
+  }
+</script>
+</html>
